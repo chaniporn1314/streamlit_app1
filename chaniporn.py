@@ -8,14 +8,13 @@ import pandas as pd
 user_api_key = st.sidebar.text_input("OpenAI API key", type="password")
 
 client = openai.OpenAI(api_key=user_api_key)
-prompt = """Act as an AI writing tutor in English. You will receive a 
-            piece of writing and you should give suggestions on how to improve it.
-            List the suggestions in a JSON array, one suggestion per line.
-            Each suggestion should have 3 fields:
-            - "before" - the text before the suggestion
-            - "after" - the text after the suggestion
-            - "category" - the category of the suggestion one of "grammar", "style", "word choice", "other"
-            - "comment" - a comment about the suggestion
+prompt = """Welcome to the Movie Sentiment Analysis AI. 
+            Your task is to analyze the sentiment of movie reviews and provide insights based on the sentiment expressed. 
+            Please format your response in a JSON array containing the following details:
+            - "movie_title" - the title of the movie being reviewed
+            - "review_text" - the text of the movie review
+            - "sentiment" - the sentiment category (positive, negative, neutral)
+            - "comment" - any additional comments regarding the sentiment analysis
             Don't say anything at first. Wait for the user to say something.
         """    
 
