@@ -19,9 +19,9 @@ prompt = """Welcome to the Movie Sentiment Analysis AI.
         """    
 
 
-st.title('Writing tutor')
-st.markdown('Input the writing that you want to improve. \n\
-            The AI will give you suggestions on how to improve it.')
+st.title('Movie Reviews')
+st.markdown('Input the Movie reviews that you want to know sentiment. \n\
+            The AI will give you comments on how sentiment reviewers are')
 
 user_input = st.text_area("Enter some text to correct:", "Your text here")
 
