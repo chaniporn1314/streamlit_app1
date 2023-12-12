@@ -21,7 +21,7 @@ prompt = """Welcome to the Movie Sentiment Analysis AI.
 
 st.title('Movie Reviews')
 st.markdown('Input the Movie reviews that you want to know sentiment. \n\
-            The AI will give you comments on how sentiment reviewers are')
+            The AI will give you comments on how reviewer sentiments are.')
 
 user_input = st.text_area("Enter some review text to generate sentiment:", "Your text here")
 
